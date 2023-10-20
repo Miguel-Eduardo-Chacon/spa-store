@@ -1,4 +1,4 @@
-import { App } from "./App.js";
+import { App } from "./app.js";
 import { getSliderElements } from "./services/api.js";
 import { setVH } from "./utils/theme-functions.js";
 
