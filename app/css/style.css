@@ -30,7 +30,8 @@
 4. Footer
 6. Main Slider
 7. Banners
-8. Product and Category Page
+8. Product and Category Page    
+  8.0. Product Custom
   8.1. Product Card
   8.2. Product Page
   8.3. Category Page
@@ -17670,11 +17671,18 @@ body:not(.has-sticky) .bnr-sticky
     display: flex;
     flex-direction: column;
     justify-items: center;
-    filter:  invert(0);
-    transition: filter 250ms linear;
 }
-.hoverable-cartegories .hoverable-category-card:hover{
-    filter: invert(1);
+.hoverable-cartegories .hoverable-category-card > picture{
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+.hoverable-cartegories .hoverable-category-card > picture > svg{
+    fill: #000;
+    transition: fill 250ms linear;
+}
+.hoverable-cartegories .hoverable-category-card:hover > picture > svg{
+    fill: var(--clr-primary);
 }
 /*  8.1. Product Card  */
 .prd-carousel-menu

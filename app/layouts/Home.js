@@ -1,7 +1,9 @@
 import { SliderElement } from "../components/SliderElement.js";
+import { ProductHover } from "../components/ProductHover.js";
 
 export const Home = async () => {
   const _sliderElementsHtml = await SliderElement();
+  const _productHoverHtml = await ProductHover();
   const _homeHtml = `<div class="page-content">
   <!-- Main Slider -->
   <div class="holder fullwidth full-nopad mt-0">
@@ -109,54 +111,7 @@ export const Home = async () => {
   <div class="holder holder-mt-medium">
     <div class="container">
       <div class="hoverable-cartegories">
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 1</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 2</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 3</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 4</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 5</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 6</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 7</h5>
-        </div>
-        <div class="hoverable-category-card">
-          <picture>
-            <img src="https://storage.googleapis.com/work-resources/images/skins/fashion/products/product-02-1.jpg" alt="category image">
-          </picture>
-          <h5 class="text-center">Categoría 8</h5>
-        </div>
+        ${_productHoverHtml}
       </div>
     </div>
   </div>
