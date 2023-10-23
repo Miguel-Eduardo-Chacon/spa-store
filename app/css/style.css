@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 :root{
+    --ff-primary: 'Share Tech Mono', monospace;
+    --ff-icons: 'icon-foxic';
     --clr-primary: #a8cf38;
 }
 
@@ -2044,7 +2046,7 @@ span.image-container
 /*  2.1. Headers / Text Blocks  */
 body
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 15px;
     line-height: 23px;
 
@@ -2061,12 +2063,12 @@ body.touch .parallaxed
 
 .theme-font
 {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: var(--ff-primary, 'Open Sans');
 }
 
 .heading-font
 {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: var(--ff-primary, 'Open Sans');
 }
 
 b,
@@ -2197,7 +2199,7 @@ ol
 h1,
 .h-lg-style
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 34px;
     font-weight: 600;
     line-height: 1.2em; 
@@ -2221,7 +2223,7 @@ h1,
 h1 + .h-behind,
 .h-lg-style + .h-behind
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: calc(34px * 3.4); 
     font-weight: 600;
 }
@@ -2237,7 +2239,7 @@ h1 + .h-behind,
 h1,
 .h1-style
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 30px;
     font-weight: 600;
     line-height: 1.2em; 
@@ -2263,7 +2265,7 @@ h1,
 h1 + .h-behind,
 .h1-style + .h-behind
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: calc(30px * 3.4); 
     font-weight: 600;
 }
@@ -2283,7 +2285,7 @@ h1 + .h-behind,
 h2,
 .h2-style
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 24px;
     font-weight: 600;
     line-height: 1.4em; 
@@ -2309,7 +2311,7 @@ h2,
 h2 + .h-behind,
 .h2-style + .h-behind
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: calc(24px * 3.4); 
     font-weight: 600;
 }
@@ -2322,7 +2324,7 @@ h2 + .h-behind,
 h3,
 .h3-style
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 17px;
     font-weight: 600;
     line-height: 1.5em; 
@@ -2342,7 +2344,7 @@ h3.h-lined,
 h4,
 .h4-style
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 17px;
     font-weight: 600;
     line-height: 28px; 
@@ -3012,7 +3014,7 @@ h6.h-lined,
 
 .h-font
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
 }
 
 .fontsize-xs
@@ -3449,7 +3451,7 @@ body.mac .social-list-circle li a:hover:after
 }
 .list-marker li:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 14px;
 
     position: absolute;
@@ -3676,7 +3678,7 @@ blockquote:not(:last-child),
 blockquote:after,
 .blockquote:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 40px;
 
     position: absolute;
@@ -4066,7 +4068,7 @@ h3 + .pagination
 
 .page404-text .txt1
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 260px;
     font-weight: bold;
     line-height: 1em;
@@ -4088,7 +4090,7 @@ h3 + .pagination
 
 .page404-text .txt2
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 44px;
     font-weight: 600;
     line-height: 1.25em;
@@ -4110,7 +4112,7 @@ h3 + .pagination
 
 .page404-text .txt3
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 230px;
     font-weight: bold;
     line-height: 1em;
@@ -4132,7 +4134,7 @@ h3 + .pagination
 
 .page404-text .txt4
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 28px;
     font-weight: 600;
     line-height: 1.25em;
@@ -4602,7 +4604,7 @@ img.lazyloaded
 .page-title-bg blockquote:after,
 .page-title-bg .blockquote:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 20px;
 
     position: absolute;
@@ -4985,7 +4987,7 @@ img[data-sizes='auto']
 
 .lookbook-bnr-title1
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 57px;
     font-weight: bold;
     line-height: 1em;
@@ -5014,7 +5016,7 @@ img[data-sizes='auto']
 
 .lookbook-bnr-title2
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 96px;
     font-weight: bold;
     line-height: 1em;
@@ -5741,7 +5743,7 @@ body:not(.touch) .title-tabs-wrap .ps__scrollbar-x-rail
 }
 .feature-list li:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 20px;
 
     position: absolute;
@@ -5911,7 +5913,7 @@ body:not(.has-btn-not-upper) .btn
 
 .btn
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
@@ -6619,7 +6621,7 @@ select.input-sm
 }
 .select-wrapper:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 17px;
     line-height: 50px;
 
@@ -7568,7 +7570,7 @@ select.selectpicker
 .bootstrap-select .btn:visited,
 .bootstrap-select .btn:focus
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 11px;
     line-height: 15px;
 
@@ -7661,7 +7663,7 @@ select.selectpicker
 
 .bs-caret:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 11px;
     line-height: 35px;
 
@@ -7872,7 +7874,7 @@ select.selectpicker
 }
 .tags-list a:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 12px; 
 
     position: absolute;
@@ -8194,7 +8196,7 @@ select.selectpicker
 }
 .mmenu > li > a
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -8229,7 +8231,7 @@ select.selectpicker
 }
 .mmenu > li > a:not(:only-child):after
 {
-    font-family: 'icon-foxic'; 
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 13px;
 
     position: relative;
@@ -8351,7 +8353,7 @@ select.selectpicker
 
 .mmenu .menu-label
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
 
     position: absolute;
     right: 31px;
@@ -8693,7 +8695,7 @@ select.selectpicker
 }
 .submenu-list a:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 8px;
 
     position: absolute;
@@ -8732,7 +8734,7 @@ select.selectpicker
 }
 .submenu-list a:not(:only-child):not(:last-child):after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 11px;
 
     position: absolute;
@@ -14867,15 +14869,15 @@ button:hover .slider-control-icon .play
 {
     display: -ms-flexbox;
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     height: 100%; 
     padding: 15px 15px 30px;
 
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
     -ms-flex-direction: column;
 }
 @media (max-width: 575px)
@@ -15326,7 +15328,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 }
 .bnslider-text-content .bnslider-text--price
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .55em;
     font-weight: 600;
     line-height: 1em;
@@ -15362,7 +15364,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 }
 .bnslider-text-content .bnslider-text--price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: .455em;
     font-weight: 400;
     line-height: 1em;
@@ -15647,7 +15649,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-text--price-sale
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: .8em;
     font-weight: 300;
 
@@ -15711,7 +15713,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style1 .bnslider-text-content .bnslider-text--price
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .5em;
     font-weight: 600;
 }
@@ -15725,7 +15727,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style1 .bnslider-text-content .bnslider-text--price-old
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .68em;
     font-weight: 300;
 }
@@ -15763,7 +15765,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style2 .bnslider-text-content .bnslider-text--price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: .5em;
     font-weight: 300;
     line-height: 1em;
@@ -15782,7 +15784,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style2 .bnslider-text-content .bnslider-text--price
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .6em;
     font-weight: 600;
     line-height: 1em;
@@ -15870,7 +15872,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style3 .bnslider-text-content .bnslider-text--price
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .60em;
     font-weight: 600;
     line-height: 1em;
@@ -15925,7 +15927,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style4 .bnslider-text-content .bnslider-text--price-old
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .65em;
     font-weight: 300;
     line-height: 1em;
@@ -15942,7 +15944,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style4 .bnslider-text-content .bnslider-text--price
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: .6em;
     font-weight: 600;
     line-height: 1em;
@@ -16003,7 +16005,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style6 .bnslider-text-content .bnslider-text--price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: .4em;
     font-weight: 300;
     line-height: 1em;
@@ -16029,7 +16031,7 @@ body.fullpage-layout .bnslider-text-content .bnslider-text-content-flex
 
 .bnslider-slide-product-style6 .bnslider-text-content .bnslider-text--price
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: .6em;
     font-weight: 600;
     line-height: 1em;
@@ -17662,6 +17664,10 @@ body:not(.has-sticky) .bnr-sticky
 
 /*  8. Product and Category Page  */
 /*  8.0. Product Custom Section*/
+.categories-slider{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
 .hoverable-cartegories{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -18508,14 +18514,14 @@ body:not(.has-sticky) .bnr-sticky
 }
 .prd-price .price-new
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-weight: 600;
 
     color: #282828;
 }
 .prd-price .price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 13px;
     font-weight: 300;
     line-height: 18px;
@@ -20816,7 +20822,7 @@ h1.sticky-addcart_title,
 .popup-addedtocart_title,
 .dropdn-content ul.search-results li .title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
 }
 
 .prd-lookbook
@@ -22289,7 +22295,7 @@ body.touch .prd-block_main-image .slick-prev:not(.slick-disabled):hover:not(.sli
 .prd-block_price--actual,
 .prd-block_price--special
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 35px;
     font-weight: 400;
     line-height: 1.2em; 
@@ -22341,7 +22347,7 @@ body.touch .prd-block_main-image .slick-prev:not(.slick-disabled):hover:not(.sli
 
 .prd-block_price--text
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
@@ -23463,7 +23469,7 @@ body.touch .prd-block_main-image .slick-prev:not(.slick-disabled):hover:not(.sli
 .prd-block_actions .btn--add-to-compare,
 .prd-block_actions .btn--follow
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 20px;
     font-weight: 600;
     line-height: 33px;
@@ -24952,7 +24958,7 @@ body.equal-height .product-main-carousel .slick-slide > span img
 
 .sidebar-block_title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 15px;
     font-weight: 600;
     line-height: 1.333em;
@@ -25074,7 +25080,7 @@ body.equal-height .product-main-carousel .slick-slide > span img
 }
 .selected-filters li > a:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 12px; 
 
     position: absolute;
@@ -26551,7 +26557,7 @@ img.color-bordered
 }
 .prd-block .size-list li span.value:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 12px; 
 
     position: relative;
@@ -26918,7 +26924,7 @@ img.color-bordered
 }
 .countdown-box-bg .countdown > span span
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 30px;
     font-weight: 600;
     line-height: 1em;
@@ -27736,7 +27742,7 @@ a.minicart-drop-countdown
 }
 .product-full-txt
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 30px;
     font-weight: 900;
     line-height: 1em;
@@ -27910,7 +27916,7 @@ a.minicart-drop-countdown
 }
 .product-full-price .price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 30px;
     font-weight: 300;
     line-height: 1em;
@@ -28057,7 +28063,7 @@ a.minicart-drop-countdown
 }
 .product-hot-label
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
@@ -28112,7 +28118,7 @@ a.minicart-drop-countdown
 }
 .product-hot-label-sm
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 20px;
     font-weight: 400;
     line-height: 22px;
@@ -28160,7 +28166,7 @@ a.minicart-drop-countdown
 }
 .product-hot-price .price-text
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 30px;
     font-weight: 700; 
     line-height: 1.25em;
@@ -30230,7 +30236,7 @@ a.minicart-drop-countdown
 }
 .newslettermodal--classic.fancybox-content .newslettermodal-content-title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 26px;
     font-weight: bold;
     line-height: 32px;
@@ -30385,7 +30391,7 @@ body.has-round-btns .form-inline .form-control
 }
 .instagram-feed-full a:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 40px;
     line-height: 1em;
 
@@ -32818,7 +32824,7 @@ body.has-round-btns .form-inline .form-control
 }
 .fact-block .title
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: var(--ff-primary, 'Open Sans'); 
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -33589,7 +33595,7 @@ body.has-round-btns .form-inline .form-control
 }
 .creative-product-carousel-price .price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 18px;
     font-weight: 500;
     line-height: 1em;
@@ -33605,7 +33611,7 @@ body.has-round-btns .form-inline .form-control
 }
 .creative-product-carousel-price .price-new
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 20px;
     font-weight: 600;
     line-height: 1em;
@@ -36332,7 +36338,7 @@ body.has-round-btns .form-inline .form-control
 
 .cart-table-prd-price-total
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 26px;
     line-height: 1em;
 
@@ -36438,7 +36444,7 @@ body.has-round-btns .form-inline .form-control
 }
 .cart-table-prd-price .price-old
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 16px;
     font-weight: 300;
     line-height: 1em;
@@ -36454,7 +36460,7 @@ body.has-round-btns .form-inline .form-control
 }
 .cart-table-prd-price .price-new
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 20px;
     font-weight: 500;
     line-height: 1em;
@@ -37167,7 +37173,7 @@ p.countdown-box-text:not(:first-child)
 }
 .filters .filters-label > a
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 16px;
     font-weight: 600; 
     line-height: 20px;
@@ -37655,7 +37661,7 @@ p.countdown-box-text:not(:first-child)
 
 .collection-grid-2-title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 19px;
     font-weight: 600;
     line-height: 24px;
@@ -38088,7 +38094,7 @@ p.countdown-box-text:not(:first-child)
 }
 .nav-tabs:not(.tab-category) > li .nav-link
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -38905,7 +38911,7 @@ p.countdown-box-text:not(:first-child)
 }
 .breadcrumbs li:after
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 8px;
     line-height: 20px; 
 
@@ -39764,7 +39770,7 @@ body.touch .modal--quickview .prd-block--prv-right .slick-slider.slick-vertical 
 }
 .modal--simple .modal-header-title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -41103,7 +41109,7 @@ body.touch .modal--quickview .prd-block--prv-right .slick-slider.slick-vertical 
 .sticky-addcart_price--actual,
 .sticky-addcart_price--special
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 20px;
     font-weight: 600;
 
@@ -41180,7 +41186,7 @@ body.touch .modal--quickview .prd-block--prv-right .slick-slider.slick-vertical 
 }
 .sticky-addcart_image--zoom > a:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 20px;
 
     z-index: 2;
@@ -41496,7 +41502,7 @@ body.touch .modal--quickview .prd-block--prv-right .slick-slider.slick-vertical 
 }
 .fancybox-navigation .fancybox-button:before
 {
-    font-family: icon-foxic;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 32px;
     line-height: 1em;
 
@@ -41562,7 +41568,7 @@ body.touch .modal--quickview .prd-block--prv-right .slick-slider.slick-vertical 
 
 .fancybox--light .fancybox-caption
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary, 'Open Sans');
     font-size: 18px;
     font-weight: 600;
     line-height: 1em;
@@ -41983,7 +41989,7 @@ body
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'icon-foxic';
+    font-family: var(--ff-icons, 'icon-foxic');
     font-size: 27px;
     line-height: 1;
 

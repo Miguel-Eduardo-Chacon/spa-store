@@ -1,9 +1,12 @@
 import { SliderElement } from "../components/SliderElement.js";
+import { CategorySlider } from "../components/home/CategorySlider.js";
 import { ProductHover } from "../components/ProductHover.js";
+
 
 export const Home = async () => {
   const _sliderElementsHtml = await SliderElement();
   const _productHoverHtml = await ProductHover();
+  const _categorySlider = await CategorySlider();
   const _homeHtml = `<div class="page-content">
   <!-- Main Slider -->
   <div class="holder fullwidth full-nopad mt-0">
@@ -23,37 +26,15 @@ export const Home = async () => {
     </div>
   </div>
   <!-- //Main Slider -->
-  <div class="holder holder-mt-xsmall">
-    <div class="container">
-      <div class="row vert-margin-small">
-        <div class="col-sm">
-          <a href="/categoria" class="collection-grid-3-item image-hover-scale">
-            <div class="collection-grid-3-item-img image-container" style="padding-bottom: 93.68%">
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://storage.googleapis.com/work-resources/images/skins/fashion/banner-fashion-2-02.png" class="lazyload fade-up"
-                alt="Banner">
-              <div class="foxic-loader"></div>
-            </div>
-            <div class="collection-grid-3-caption-bg">
-              <h3 class="collection-grid-3-title">Accesorios</h3>
-              <h4 class="collection-grid-3-subtitle">El&nbsp;Mejor&nbsp;Look&nbsp;en&nbsp;Todo&nbsp;Sitio</h4>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm">
-          <a href="/categoria" class="collection-grid-3-item image-hover-scale">
-            <div class="collection-grid-3-item-img image-container" style="padding-bottom: 93.68%">
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="https://storage.googleapis.com/work-resources/images/skins/fashion/banner-fashion-2-04.png" class="lazyload fade-up"
-                alt="Banner">
-              <div class="foxic-loader"></div>
-            </div>
-            <div class="collection-grid-3-caption-bg">
-              <h3 class="collection-grid-3-title">Moda</h3>
-              <h4 class="collection-grid-3-subtitle">Vive&nbsp;Acorde&nbsp;a&nbsp;la&nbsp;Moda</h4>
-            </div>
-          </a>
-        </div>
+  
+  <div class="holder holder-mt-medium holder-with-bg holder-pt-medium holder-pb-medium bgcolor">
+    <div class="container categories-slider">
+      <div class="title-with-arrows title-wrap text-left">
+        <h2 class="h2-style"><a href="/blog" title="View all">ENCUENTRA TU ARMA DE FUEGO:</a></h2>
+        <div class="carousel-arrows"></div>
+      </div>
+      <div class="post-prws post-prws-carousel post-prws--row js-post-prws-carousel" data-slick='{"slidesToShow": 4, "responsive": [{"breakpoint": 992,"settings": {"slidesToShow": 2 }},{"breakpoint": 480,"settings": {"slidesToShow": 1 }}]}'>
+      ${_categorySlider}
       </div>
     </div>
   </div>
@@ -108,6 +89,29 @@ export const Home = async () => {
       </div>
     </div>
   </div>
+  <div class="holder holder-mt-medium ">
+			<div class="container">
+				<a href="/catalogo" target="_self" class="bnr-wrap bnr-">
+					<div class="bnr custom-caption image-hover-scale bnr--middle bnr--left bnr--fullwidth">
+						<div class="bnr-img d-none d-sm-block image-container" style="padding-bottom: 41.36752136752137%">
+							<img src="https://storage.googleapis.com/work-resources/images/banners/pistol_banner_static.jpg" data-src="https://storage.googleapis.com/work-resources/images/banners/pistol_banner_static.jpg" class="fade-up ls-is-cached lazyloaded" alt="">
+						</div>
+						<div class="bnr-img d-sm-none image-container" style="padding-bottom: 74.3139407244786%">
+							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://storage.googleapis.com/work-resources/images/banners/pistol_banner_static.jpg" class="lazyload fade-up" alt="">
+						</div>
+						<div class="bnr-caption" style="padding: 4% 4%; ">
+							<div class="bnr-caption-inside w-s-50 w-ms-100 title-wrap">
+								<h2 class="h1-style" data-color="#fff">PONLE UN ACABADO ÚNICO A TU ARMA<br class="d-sm-none"> ACABADOS CERAKOTE</h2>
+								<div class="h-sub mt-0" data-color="#fff">CONTÁCTATE CON NOSOTROS Y SOLICITA EL ACABADO CERAKOTE PARA TU ARMA CON EL DISEÑO QUE DESEES.</div>
+								<div class="bnr-btn inherit mt-sm order-3">
+									<div class="btn">ACABADOS CERAKOTE >></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
   <div class="holder holder-mt-medium">
     <div class="container">
       <div class="hoverable-cartegories">

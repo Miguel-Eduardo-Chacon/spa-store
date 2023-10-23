@@ -13,8 +13,7 @@ const setVideoElement = (videoProps) => {
       <div class="bnslider-text-content txt-middle txt-center txt-middle-m txt-center-m">
         <div class="bnslider-text-content-flex containe ">
           <div class="bnslider-vert">
-            <div class="bnslider-text order-1 mt-sm bnslider-text--xl  text-center  " data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#ffffff" data-fontweight="900" data-fontline="1.00" data-otherstyle="">Lorem</div>
-            <div class="bnslider-text order-2 mt-sm bnslider-text--xl  text-center  " data-animation="fadeInUp" data-animation-delay="1000" data-fontcolor="#ffffff" data-fontweight="900" data-fontline="1.00" data-otherstyle="">Ipsum <span class="custom-color">Lorem</span></div>
+            <div class="bnslider-text order-1 mt-sm bnslider-text--xl  text-center  " data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#ffffff" data-fontweight="900" data-fontline="1.00" data-otherstyle="">${videoProps.text}</div>
             <div class="btn-wrap text-center  order-4 mt-lg"
               data-animation="fadeIn"
               data-animation-delay="2000">
@@ -26,7 +25,7 @@ const setVideoElement = (videoProps) => {
                 ${button["bg-color"] !== '' ? `data-bgcolor="${button.color}"` : ''}
                 data-hover-bgcolor="#33cad5" 
               >
-                Comprar ahora
+                MIRA NUESTROS CATÁLOGOS >>
               </a>
             </div>
           </div>
@@ -44,17 +43,13 @@ const setImageElement = (imageProps) => {
   <div class="bnslider-image lazyload"
     data-bgset="${imageProps.src.desktop}"></div>
   <div class="bnslider-text-wrap bnslider-overlay ">
-    <div class="bnslider-text-content txt-middle txt-right txt-middle-m txt-center-m">
+    <div class="bnslider-text-content txt-middle txt-middle-m txt-center-m">
       <div class="bnslider-text-content-flex ">
         <div class="bnslider-vert w-s-60 w-ms-100" style="padding: 0px">
           <div class="bnslider-text order-1 mt-sm bnslider-text--md text-center data-ini"
             data-animation="fadeInUp" data-animation-delay="800"
-            data-fontcolor="#ffffff" data-fontweight="700" data-fontline="1.5">Lorem, ipsum dolor sit</div>
-          <div class="bnslider-text order-2 mt-sm bnslider-text--xs text-center data-ini"
-            data-animation="fadeInUp" data-animation-delay="1000"
-            data-fontcolor="#ffffff" data-fontweight="400" data-fontline="1.5">
-            Lorem, ipsum dolor sit</div>
-          <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn"
+            data-fontcolor="#ffffff" data-fontweight="700" data-fontline="1.5">${imageProps.text}</div>
+          <div class="btn-wrap order-4 mt-md" data-animation="fadeIn"
             data-animation-delay="2000" style="opacity: 1;">
             <a 
               href="${button.href}" 
@@ -63,7 +58,7 @@ const setImageElement = (imageProps) => {
               ${button.color !== '' ? `data-color="${button.color}"` : ''}
               ${button["bg-color"] !== '' ? `data-bgcolor="${button.color}"` : ''}
             >
-              Comprar ahora
+              MIRA NUESTROS CATÁLOGOS >>
             </a>
           </div>
         </div>

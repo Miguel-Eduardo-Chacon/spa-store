@@ -1,0 +1,9 @@
+{
+  "logo_src": "https://storage.googleapis.com/work-resources/images/logo_test.svg",
+  "navbar":[
+    {
+      "title": "ARMAS",
+      "link": "/catalogo/armas"
+    }
+  ]
+}
