@@ -22,7 +22,7 @@ export const NotFoundPage = () => {
 			</svg>
 		</div>
 		<div class="page404-info text-center">
-			<a href="#" class="btn">Go Back</a>
+			<a href="/" class="btn">Go Back</a>
 		</div>
 	</div>
 </div>

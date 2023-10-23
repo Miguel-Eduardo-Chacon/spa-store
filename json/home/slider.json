@@ -3,23 +3,11 @@
     {
       "type": "video",
       "autoplay": true,
-      "src": "https://storage.googleapis.com/work-resources/images/skins/fashion/slider/huacachina.mp4",
+      "src": "https://storage.googleapis.com/work-resources/videos/weapons_store_video.mp4",
+      "text": "",
       "button": {
-        "href": "/#/categoria",
+        "href": "/catalogo",
         "target": "_self",
-        "color": "#000000",
-        "bg-color": "#ffffff"
-      }
-    },
-    {
-      "type": "image",
-      "src": {
-        "desktop": "https://storage.googleapis.com/work-resources/images/skins/fashion/slider//arequipa.jpg",
-        "mobile": "https://storage.googleapis.com/work-resources/images/skins/fashion/slider/arequipa.jpg"
-      },
-      "button": {
-        "href": "https://bit.ly/3eJX5XE",
-        "target": "_blank",
         "color": "",
         "bg-color": ""
       }
@@ -27,22 +15,12 @@
     {
       "type": "image",
       "src": {
-        "desktop": "https://storage.googleapis.com/work-resources/images/skins/fashion/slider/slide-fashion-01.png",
-        "mobile": "https://storage.googleapis.com/work-resources/images/skins/fashion/slider/slide-fashion-01-m.png"
+        "desktop": "https://storage.googleapis.com/work-resources/images/banners/pistol_banner.jpg",
+        "mobile": "https://storage.googleapis.com/work-resources/images/banners/pistol_banner.jpg"
       },
+      "text": "",
       "button": {
-        "href": "https://bit.ly/3eJX5XE",
-        "target": "_blank",
-        "color": "#000000",
-        "bg-color": "#ffffff"
-      }
-    },
-    {
-      "type": "video",
-      "autoplay": "true",
-      "src": "https://cdn.shopify.com/s/files/1/0201/0942/6742/files/video-girl.mp4?v=1594287483",
-      "button": {
-        "href": "/#/categoria",
+        "href": "/catalogo",
         "target": "_self",
         "color": "",
         "bg-color": ""
